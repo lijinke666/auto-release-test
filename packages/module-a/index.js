@@ -8,4 +8,7 @@ module.exports = {
   feat() {
     console.log('module A feat');
   },
+  docs() {
+    console.log('module A docs');
+  },
 };
