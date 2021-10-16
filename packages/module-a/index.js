@@ -11,4 +11,7 @@ module.exports = {
   docs() {
     console.log('module A docs');
   },
+  pref() {
+    console.log('module A pref');
+  },
 };
