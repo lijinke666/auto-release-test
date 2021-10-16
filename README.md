@@ -6,3 +6,5 @@
 <a href="https://badge.fury.io/js/auto-release-module-b" title="npm">
 <img src="https://img.shields.io/npm/v/auto-release-module-b.svg?style=flat-square" alt="npm version"/>
 </a>
+
+666
