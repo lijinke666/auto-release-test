@@ -1,3 +1,11 @@
+# [auto-release-module-b-v1.1.1](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.1.0...auto-release-module-b-v1.1.1) (2021-10-16)
+
+
+### Bug Fixes
+
+* module b fix ([54a97ff](https://github.com/lijinke666/auto-release-test/commit/54a97ffe0cc83bc7386a573d17d94e7b519d40e9))
+* 更新版本号 ([648b9de](https://github.com/lijinke666/auto-release-test/commit/648b9deb6a7b95c626117be173db986df8f37dfe))
+
 # [auto-release-module-b-v1.1.0](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.0.0...auto-release-module-b-v1.1.0) (2021-10-16)
 
 
