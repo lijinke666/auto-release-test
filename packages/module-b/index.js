@@ -5,4 +5,7 @@ module.exports = {
   feat() {
     console.log('测试新功能');
   },
+  fix() {
+    console.log('fix');
+  },
 };
