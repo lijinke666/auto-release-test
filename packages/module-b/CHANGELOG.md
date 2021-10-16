@@ -1,3 +1,10 @@
+# [auto-release-module-b-v1.1.0](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.0.0...auto-release-module-b-v1.1.0) (2021-10-16)
+
+
+### Features
+
+* 测试 模块b 新功能发布 ([b447dd7](https://github.com/lijinke666/auto-release-test/commit/b447dd767ba423ff492e0732cd148ad62f5e5859))
+
 # auto-release-module-b-v1.0.0 (2021-10-16)
 
 
