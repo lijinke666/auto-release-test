@@ -5,4 +5,7 @@ module.exports = {
   fix() {
     console.log('module A fix');
   },
+  feat() {
+    console.log('module A feat');
+  },
 };
