@@ -1,7 +1,21 @@
 {
   "name": "auto-release-test",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+    "lerna": "^4.0.0",
+    "semantic-release": "^18.0.0",
+    "semantic-release-monorepo": "^7.0.5"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lijinke666/auto-release-test",
+  "author": "Jinke Li <a1231236677287@163.com>",
+  "license": "MIT"
 }
