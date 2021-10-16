@@ -1,3 +1,10 @@
+# [auto-release-module-a-v1.2.0](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-a-v1.1.1...auto-release-module-a-v1.2.0) (2021-10-16)
+
+
+### Features
+
+* module a feat ([806ab66](https://github.com/lijinke666/auto-release-test/commit/806ab66214cd740bb744a99db0a851bab25d2131))
+
 # [auto-release-module-a-v1.1.1](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-a-v1.1.0...auto-release-module-a-v1.1.1) (2021-10-16)
 
 
