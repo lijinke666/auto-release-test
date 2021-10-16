@@ -8,10 +8,4 @@ module.exports = {
   feat() {
     console.log('module A feat');
   },
-  docs() {
-    console.log('module A docs');
-  },
-  pref() {
-    console.log('module A pref');
-  },
 };
