@@ -1,3 +1,11 @@
+# [auto-release-module-a-v1.2.1](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-a-v1.2.0...auto-release-module-a-v1.2.1) (2021-10-16)
+
+
+### Bug Fixes
+
+* xx ([#6](https://github.com/lijinke666/auto-release-test/issues/6)) ([b5b130b](https://github.com/lijinke666/auto-release-test/commit/b5b130befef5074553c09708fe9f86222055556e))
+* 测试pr的方式修改 module-a ([70606da](https://github.com/lijinke666/auto-release-test/commit/70606daff64a421dbc72f748ac412bc7e774b6f5))
+
 # [auto-release-module-a-v1.2.0](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-a-v1.1.1...auto-release-module-a-v1.2.0) (2021-10-16)
 
 
