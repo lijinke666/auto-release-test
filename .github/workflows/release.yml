@@ -51,28 +51,32 @@ jobs:
 
       - name: Release success notify
         if: ${{ success() }}
-        uses: wow-actions/dingtalk-notify@v1
+        uses: zcong1993/actions-ding@master
         with:
-          token: ${{ secrets.DING_TALK_GROUP_TOKEN }}
-          msgtype: 'link'
-          content: |
+          dingToken: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          body: |
             {
-              "title": "🎉 发布成功",
-              "text": "发布成功文本",
-              "messageUrl": "https://github.com/lijinke666/auto-release-test/releases",
-              "picUrl": "https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png"
+              "msgtype": "link",
+              "link": {
+                "title": "🎉 发布成功",
+                "text": "发布成功文本",
+                "messageUrl": "https://github.com/lijinke666/auto-release-test/releases",
+                "picUrl": "https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png"
+              }
             }
 
       - name: Release failed notify
         if: ${{ failure() }}
-        uses: wow-actions/dingtalk-notify@v1
+        uses: zcong1993/actions-ding@master
         with:
-          token: ${{ secrets.DING_TALK_GROUP_TOKEN }}
-          msgtype: 'link'
-          content: |
+          dingToken: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          body: |
             {
-              "title": "🔊 发布失败",
-              "text": "发布失败文本",
-              "messageUrl": "https://github.com/lijinke666/auto-release-test/actions/workflows/release.yml",
-              "picUrl": "https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png"
+              "msgtype": "link",
+              "link": {
+                "title": "🔊 发布失败",
+                "text": "发布失败文本",
+                "messageUrl": "https://github.com/lijinke666/auto-release-test/actions/workflows/release.yml",
+                "picUrl": "https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png"
+              }
             }
