@@ -2,7 +2,7 @@ name: 🎉  Release Notify
 
 on:
   release:
-    types: [published]
+    types: [published, edit]
 
 jobs:
   notify:
