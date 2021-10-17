@@ -16,6 +16,9 @@
 
 - [x] 子包1 bug fix, 子包2 无改动, 只发子包1
 - [x] 子包1 bug fix，子包2 feat， 子包1 0.0.x  子包2 0.x.0
+- [x] 子包1 和 子包2 同时 bug fix, 同时发包, 两个包单独的 commit
+![image](https://user-images.githubusercontent.com/21015895/137615464-c86ce270-5b43-463b-9a98-3bf5aa9b74be.png)
+
 - [x] 父级 有 fix feat 更新, 子包1，子包2 的 changelog 都会含有 父级的更新
 - [x] 相关联的 pr 会有 release 提示
 - [x] master 为保护分支，通过 pr 的形式 `chore(release): x.x.x` 合并到 master，能正常触发 action 并且推送 changelog 和 tag，release
