@@ -6,6 +6,6 @@ module.exports = {
     console.log('测试新功能');
   },
   fix() {
-    console.log('fix 1.1.2');
+    console.log('fix 1.1.3');
   },
 };
