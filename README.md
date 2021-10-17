@@ -16,8 +16,10 @@
 
 - [x] 子包1 bug fix, 子包2 无改动, 只发子包1
 - [x] 子包1 bug fix，子包2 feat， 子包1 0.0.x  子包2 0.x.0
-- [x] 子包1 和 子包2 同时 bug fix, 同时发包, 两个包单独的 commit
+- [x] 子包1 和 子包2 同时 bug fix, 同时发包, 两个包单独的 commit，两个单独的 release
 ![image](https://user-images.githubusercontent.com/21015895/137615464-c86ce270-5b43-463b-9a98-3bf5aa9b74be.png)
+![image](https://user-images.githubusercontent.com/21015895/137615575-4d012c44-3fdf-4028-92da-e1f3c3798b01.png)
+
 
 - [x] 父级 有 fix feat 更新, 子包1，子包2 的 changelog 都会含有 父级的更新
 - [x] 相关联的 pr 会有 release 提示
@@ -37,7 +39,7 @@
 ![image](https://user-images.githubusercontent.com/21015895/137594174-97131cd7-03f6-4603-9957-49bf214f59fd.png)
 
 2. 测试 子包 都为 `0.0.0` 首次发布默认会更新为 `1.0.0` 感觉**首次需要手动指定版本**
-3. 为什么 semantic release 可以正常触发 release notify action ? 默认的 GITHUB_TOKEN 是 github 的一个虚拟账号
+3. 如何让 semantic release 可以正常触发 release notify action ? 默认的 GITHUB_TOKEN 是 github 的一个虚拟账号
 
 ```yml
 name: 🎉  Release Notify
@@ -57,6 +59,8 @@ on:
 ![image](https://user-images.githubusercontent.com/21015895/137614047-92fc69a2-c714-4419-bc07-a3a44394c8a6.png)
 
 ![image](https://user-images.githubusercontent.com/21015895/137614051-662556d8-f304-4786-a6a8-e3bbd712f2bf.png)
+
+目前测试下来没有按预期的触发
 
 
 
