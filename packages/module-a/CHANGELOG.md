@@ -1,3 +1,10 @@
+# [auto-release-module-a-v1.2.2](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-a-v1.2.1...auto-release-module-a-v1.2.2) (2021-10-17)
+
+
+### Bug Fixes
+
+* 1.2.2 ([#9](https://github.com/lijinke666/auto-release-test/issues/9)) ([a7ebe9c](https://github.com/lijinke666/auto-release-test/commit/a7ebe9c501735e00d86c0d0256c185c7e7eca789))
+
 # [auto-release-module-a-v1.2.1](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-a-v1.2.0...auto-release-module-a-v1.2.1) (2021-10-16)
 
 
