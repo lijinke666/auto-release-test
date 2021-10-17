@@ -39,3 +39,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn release
+        
+      - name: Release notify
+        if: ${{ success() }}
+        uses: visiky/dingtalk-release-notify@main
+        with:
+          DING_TALK_TOKEN: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          notify_title: '🎉 {release_tag} 发布 🎉'
+          notify_body: '## { title }<hr /> ![preview](https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png) <hr /> { body } <hr />'
+          at_all: false
