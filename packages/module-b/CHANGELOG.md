@@ -1,3 +1,10 @@
+# [auto-release-module-b-v1.1.3](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.1.2...auto-release-module-b-v1.1.3) (2021-10-17)
+
+
+### Bug Fixes
+
+* module b fix 1.1.3 ([b0c8431](https://github.com/lijinke666/auto-release-test/commit/b0c843113a3bc7f6158b1fbc5c3b3e71958fdfb1))
+
 # [auto-release-module-b-v1.1.2](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.1.1...auto-release-module-b-v1.1.2) (2021-10-17)
 
 
