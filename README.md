@@ -25,10 +25,30 @@
 - [x] 相关联的 pr 会有 release 提示
 - [x] master 为保护分支，通过 pr 的形式 `chore(release): x.x.x` 合并到 master，能正常触发 action 并且推送 changelog 和 tag，release
 - [x] 可以自动生成 release， 自动添加 changelog， 多个子包生成不同的 release，标题为 （包名-版本号）
-- [ ] release 后 钉钉群通知
 
 ![image](https://user-images.githubusercontent.com/21015895/137594106-2e7abba2-2b8e-4a72-8b64-5ba0722dbfdb.png)
 ![image](https://user-images.githubusercontent.com/21015895/137594255-b460d4a8-bf20-42c4-9c18-8686f8b52dc5.png)
+
+- [x] release 后 钉钉群通知： 由于 release 是机器人执行的, action 监听 release published 触发不了, 我的做法是 放在 release 后执行
+
+```
+  - name: Release
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    run: yarn release
+
+  - name: Release notify
+    if: ${{ success() }}
+    uses: visiky/dingtalk-release-notify@main
+    with:
+      DING_TALK_TOKEN: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+      notify_title: '🎉 {release_tag} 发布 🎉'
+      notify_body: '## { title }<hr /> ![preview](https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png) <hr /> { body } <hr />'
+      at_all: false
+```
+![image](https://user-images.githubusercontent.com/21015895/137616518-81ceae08-6d15-4900-85d5-217282868859.png)
+
 
 
 ### 问题
@@ -61,6 +81,10 @@ on:
 ![image](https://user-images.githubusercontent.com/21015895/137614051-662556d8-f304-4786-a6a8-e3bbd712f2bf.png)
 
 目前测试下来没有按预期的触发
+
+![image](https://user-images.githubusercontent.com/21015895/137616585-67bb37b4-b7ee-469d-8e63-9b58c8b5e37c.png)
+
+如果能把 release 时候的 token 替换成 semantic token 也许可以触发 action 的 release published
 
 
 
