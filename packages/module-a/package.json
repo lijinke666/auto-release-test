@@ -1,6 +1,6 @@
 {
   "name": "auto-release-module-a",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "index.js",
   "license": "MIT"
 }
