@@ -7,7 +7,7 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-18.04
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    if: "!contains(github.event.head_commit.message, '[ci skip]') && startsWith(github.event.head_commit.message , 'chore(release):')"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -35,7 +35,6 @@ jobs:
         run: yarn
 
       - name: Release
-        if: startsWith( github.event.head_commit.message , 'chore(release):' )
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

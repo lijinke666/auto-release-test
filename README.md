@@ -20,6 +20,7 @@
 - [x] 相关联的 pr 会有 release 提示
 - [x] master 为保护分支，通过 pr 的形式 `chore(release): x.x.x` 合并到 master，能正常触发 action 并且推送 changelog 和 tag，release
 - [x] 可以自动生成 release， 自动添加 changelog， 多个子包生成不同的 release，标题为 （包名-版本号）
+- [ ] release 后 钉钉群通知
 
 ![image](https://user-images.githubusercontent.com/21015895/137594106-2e7abba2-2b8e-4a72-8b64-5ba0722dbfdb.png)
 ![image](https://user-images.githubusercontent.com/21015895/137594255-b460d4a8-bf20-42c4-9c18-8686f8b52dc5.png)
