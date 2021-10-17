@@ -82,5 +82,9 @@ on:
 
 目前测试下来没有按预期的触发
 
+![image](https://user-images.githubusercontent.com/21015895/137616585-67bb37b4-b7ee-469d-8e63-9b58c8b5e37c.png)
+
+如果能把 release 时候的 token 替换成 semantic token 也许可以触发 action 的 release published
+
 
 
