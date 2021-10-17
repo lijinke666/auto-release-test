@@ -36,6 +36,14 @@
 2. 测试 子包 都为 `0.0.0` 首次发布默认会更新为 `1.0.0` 感觉**首次需要手动指定版本**
 3. 为什么 semantic release 可以正常触发 release notify action ? 默认的 GITHUB_TOKEN 是 github 的一个虚拟账号
 
+```yml
+name: 🎉  Release Notify
+
+on:
+  release:
+    types: [published]
+```
+
 ![image](https://user-images.githubusercontent.com/21015895/137614074-f6dc253c-0f04-40b3-bfdd-6f6bddb08871.png)
 
 如果 action 监听 release published，github 默认 token 是不会触发的, 认为是机器人执行 防止套路循环执行
